@@ -1,9 +1,9 @@
-FROM pataquets/ubuntu:trusty
+FROM pataquets/ubuntu:bionic
 
 RUN \
-	apt-get update && \
-	DEBIAN_FRONTEND=noninteractive \
-		apt-get -y install n2n \
-	&& \
-	apt-get clean && \
-	rm -rf /var/lib/apt/lists/
+  apt-get update && \
+  DEBIAN_FRONTEND=noninteractive \
+    apt-get -y install n2n \
+  && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/
